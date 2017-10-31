@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.center-wrapper {
+  width: 500px;
+  margin: 25px auto;
+  border: 1px solid #ccc;
+}
+
+.section {
+  width: 100%;
+  cursor: pointer
+}
+
+.section p.title {
+  display: block;
+  font-size: 1em;
+  background: #ccc;
+  padding: 10px 0;
+  border: 1px solid #fff;
+}
+
+.content {
+  overflow-y: hidden;
+  min-height: 0;
+  max-height: 0;
+  transition: all .25s ease-in-out;
+  font-size: 12px;
+  background: rgba(204, 208, 209, 0.23);
+}
+
+.content.open {
+  min-height: 75px;
+  box-sizing: border-box;
+}
